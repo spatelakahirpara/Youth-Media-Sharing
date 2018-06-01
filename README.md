@@ -1,0 +1,2 @@
+# Youth-Media-Sharing
+•	Created video streaming web portal called “Youth Media Sharing” in which user can watch video online without any interruption even if using lower bandwidth network. Gained advanced Java programming along with Amazon web services (S3, AWS Lambda, EC2, Elastic Transcoder). Achieved video playlist with different quality by using Elastic Transcoder along with Node.js code embedded into Elastic Lambda function.
