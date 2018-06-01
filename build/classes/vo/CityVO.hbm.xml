@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.CityVO" table="city_tbl">
+  
+  
+  <id name="city_id" type="int" column="city_id" >
+   <generator class="increment"/>
+  </id>
+  
+  <property name="city_name">
+   <column name="city_name" />
+  </property>
+  <property name="city_desc">
+   <column name="city_desc" />
+  </property>
+  <many-to-one name="statevo" class="vo.StateVO" column="state_id"></many-to-one>
+  <many-to-one name="countryvo" class="vo.CountryVO" column="country_id"></many-to-one>
+      </class>
+  
+</hibernate-mapping>

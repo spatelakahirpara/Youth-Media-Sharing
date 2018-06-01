@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.LoginVO" table="Login_tbl">
+  
+  <id name="login_id" type="int" column="login_id" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="user_name">
+   <column name="user_name" />
+  </property>
+  <property name="password">
+   <column name="password" />
+  </property>
+  <property name="usertype">
+   <column name="Username" />
+  </property>
+    </class>
+  
+</hibernate-mapping>

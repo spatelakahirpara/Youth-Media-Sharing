@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.categoryvo" table="category_tbl">
+  
+  <id name="cat_id" type="int" column="cat_id" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="cat_name">
+   <column name="cat_name" />
+  </property>
+  <property name="cat_region">
+  <column name="cat_region"/>
+  </property>  
+  <property name="cat_desc">
+  <column name="cat_desc"/>
+  </property>
+  
+ 
+ </class>
+</hibernate-mapping>

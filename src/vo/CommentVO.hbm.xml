@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.CommentVO" table="comment_tbl">
+  
+  <id name="comment_id" type="int" column="comment_id">
+   <generator class="increment"/>
+  </id>
+  <property name="user_name">
+  <column name="user_name"/>
+  </property>
+  <property name="email_id">
+  <column name="email_id"/>
+  </property>
+<many-to-one name="video_id" class="vo.FileUploadVO" column="video_id"></many-to-one>
+
+
+    <property name="comment_desc">
+  <column name="comment_desc"/>
+  </property>
+  
+ 
+ </class>
+</hibernate-mapping>
